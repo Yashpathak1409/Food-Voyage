@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Food-Voyage/static/css/main.76bfeadd.css",
+    "main.js": "/Food-Voyage/static/js/main.385c51b6.js",
+    "index.html": "/Food-Voyage/index.html",
+    "main.76bfeadd.css.map": "/Food-Voyage/static/css/main.76bfeadd.css.map",
+    "main.385c51b6.js.map": "/Food-Voyage/static/js/main.385c51b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76bfeadd.css",
+    "static/js/main.385c51b6.js"
+  ]
+}
