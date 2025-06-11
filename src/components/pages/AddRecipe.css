@@ -1,0 +1,106 @@
+/* Container Styling */
+.recipe-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ffffff, #f0f8ff);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.recipe-container:hover {
+  transform: scale(1.02);
+}
+
+/* Title Styling */
+.recipe-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+.recipe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input and TextArea Styling */
+.recipe-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.recipe-label {
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+}
+
+.recipe-input,
+.recipe-textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 2px solid #ddd;
+  background-color: #fdfdfd;
+  transition: all 0.3s ease;
+}
+
+/* Focus Effects */
+.recipe-input:focus,
+.recipe-textarea:focus {
+  border-color: #ff7f50;
+  box-shadow: 0 0 8px rgba(255, 127, 80, 0.6);
+  animation: inputFocus 0.3s ease-in-out;
+}
+
+/* Button Styling */
+.recipe-button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #ff7f50, #ff4500);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+.recipe-button:hover:not(:disabled) {
+  background: linear-gradient(90deg, #ff4500, #ff7f50);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 69, 0, 0.4);
+}
+
+/* Disabled Button */
+.recipe-button:disabled {
+  background: #bbb;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* Animation for Input Focus */
+@keyframes inputFocus {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

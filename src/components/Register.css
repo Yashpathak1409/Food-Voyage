@@ -1,0 +1,117 @@
+/* General Body Styling */
+body {
+  background-color: #95d09b;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Background with Reduced Height */
+.background-container {
+  position: absolute;
+  width: 100%;
+  height: 80vh; /* Reduced from 100vh to 80vh */
+  background: linear-gradient(160deg, #3b82f6 80%, #2563eb 100%);
+  z-index: -1;
+}
+
+/* Registration Container */
+.register-container {
+  width: 100%;
+  max-width: 480px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  min-height: 500px; /* Reduced from 580px */
+}
+
+/* Registration Title */
+.register-title {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* Label Styling */
+.register-label {
+  font-size: 17px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Input Fields */
+.register-input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 2px solid #bbb;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+/* Input Focus Effect */
+.register-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+}
+
+/* Submit Button */
+.register-btn {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+.register-btn:hover {
+  background-color: #218838;
+}
+
+/* Links */
+.register-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.register-login-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-login-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .background-container {
+    height: 85vh; /* Slightly increased for small screens */
+  }
+
+  .register-container {
+    width: 90%;
+    padding: 30px;
+    min-height: 480px; /* Further reduced for small screens */
+  }
+}

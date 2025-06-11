@@ -1,0 +1,89 @@
+/* General login container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+    position: relative; /* Added relative positioning */
+  }
+  
+  .login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    position: absolute;  /* Allows the box to be moved around */
+    cursor: move;  /* Change the cursor when hovering over the box */
+  }
+  
+  /* Title */
+  .login-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields */
+  .input-group {
+    margin-bottom: 18px;
+    text-align: left;
+  }
+  
+  .label-text {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  /* Submit button */
+  .submit-btn {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #1d4ed8;
+  }
+  
+  /* Forgot Password (left) & Register (right) */
+  .login-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .forgot-password {
+    color: red;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .register-link {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  
+  .register-link:hover {
+    text-decoration: underline;
+  }
+  
